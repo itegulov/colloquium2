@@ -76,6 +76,10 @@ public class CandidateAdapter extends BaseAdapter {
             if (i == 0) {
                 newView.setBackgroundColor(Color.RED);
             }
+        } else {
+            voteTextView.setText("");
+            percentTextView.setText("");
+            newView.setBackgroundColor(Color.TRANSPARENT);
         }
         return newView;
     }
